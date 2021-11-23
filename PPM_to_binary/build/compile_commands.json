@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/Users/Frityet/Documents/ComSciPrinciples/PPM_to_binary/build",
-  "command": "/usr/bin/clang -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -o CMakeFiles/ppm_to_binary.dir/main.c.o -c /Users/Frityet/Documents/ComSciPrinciples/PPM_to_binary/main.c",
-  "file": "/Users/Frityet/Documents/ComSciPrinciples/PPM_to_binary/main.c"
-}
-]

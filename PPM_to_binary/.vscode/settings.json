@@ -1,9 +1,0 @@
-{
-    "cmake.sourceDirectory": "${workspaceFolder}/.",
-    "files.associations": {
-        "*.txt": "hoi4",
-        "*.asm": "asm",
-        "stdlib.h": "c",
-        "stdio.h": "c"
-    }
-}
