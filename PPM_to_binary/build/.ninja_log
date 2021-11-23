@@ -1,0 +1,9 @@
+# ninja log v5
+0	53	1636586315	CMakeFiles/ppm_to_binary.dir/main.c.o	582d7c2737d812a5
+53	137	1636586315	ppm_to_binary	2fbab319081c06dc
+1	54	1636586330	CMakeFiles/ppm_to_binary.dir/main.c.o	582d7c2737d812a5
+54	118	1636586330	ppm_to_binary	2fbab319081c06dc
+1	101	1636586512	CMakeFiles/ppm_to_binary.dir/main.c.o	582d7c2737d812a5
+101	181	1636586512	ppm_to_binary	2fbab319081c06dc
+0	132	1636586529	CMakeFiles/ppm_to_binary.dir/main.c.o	582d7c2737d812a5
+133	206	1636586530	ppm_to_binary	2fbab319081c06dc

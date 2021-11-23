@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.txt": "hoi4",
+        "*.asm": "asm",
+        "cmath": "cpp",
+        "*.tcc": "cpp"
+    }
+}

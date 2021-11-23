@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/Users/Frityet/Documents/ComSciPrinciples/turtle_lab/build",
+  "command": "/usr/local/bin/x86_64-apple-darwin19-gcc-11.2.0 -I../turtle_lab -I../PRIVATE -I/usr/local/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -o CMakeFiles/turtle_lab.dir/src/main.c.o -c /Users/Frityet/Documents/ComSciPrinciples/turtle_lab/src/main.c",
+  "file": "/Users/Frityet/Documents/ComSciPrinciples/turtle_lab/src/main.c"
+},
+{
+  "directory": "/Users/Frityet/Documents/ComSciPrinciples/turtle_lab/build",
+  "command": "/usr/local/bin/x86_64-apple-darwin19-gcc-11.2.0 -I../turtle_lab -I../PRIVATE -I/usr/local/include -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX11.1.sdk -mmacosx-version-min=10.15 -o CMakeFiles/turtle_lab.dir/src/turtle.c.o -c /Users/Frityet/Documents/ComSciPrinciples/turtle_lab/src/turtle.c",
+  "file": "/Users/Frityet/Documents/ComSciPrinciples/turtle_lab/src/turtle.c"
+}
+]

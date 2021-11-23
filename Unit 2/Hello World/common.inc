@@ -1,0 +1,9 @@
+
+; Addresses ;
+SYSTEM_WRITE_ADDRESS    EQU     0x2000004
+SYSTEM_EXIT_ADDRESS     EQU     0x2000001
+
+; Characters ; 
+NULL    EQU     0x0
+NEWLINE EQU     0xA
+
