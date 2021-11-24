@@ -19,8 +19,6 @@ void init(void)
 
 int main(int argc, char *argv[])
 {
-    
-
     struct turtle turtle = create_turtle(window, renderer);
 
     SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
