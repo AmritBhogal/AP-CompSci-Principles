@@ -23,7 +23,5 @@ start:
 
 SECTION .DATA
 
-%include "../common.inc"
-
-MSG:     DB     "HELLO, WORLD!", NEWLINE, NULL
+MSG:     DB     "HELLO, WORLD!", 0xA, 0x0
 MSG_LEN: EQU    $-MSG

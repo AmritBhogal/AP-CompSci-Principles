@@ -1,9 +1,10 @@
 
-; Addresses ;
-SYSTEM_WRITE_ADDRESS    EQU     0x2000004
-SYSTEM_EXIT_ADDRESS     EQU     0x2000001
-
-; Characters ; 
-NULL    EQU     0x0
-NEWLINE EQU     0xA
-
+%macro SYSPRINT 2
+    PUSH    R8
+    PUSH    R9 
+    MOV     R8, %1
+    MOV     R9, %2
+    CALL    SYSTEM_PRINT
+    POP     R9
+    POP     R8
+%endmacro

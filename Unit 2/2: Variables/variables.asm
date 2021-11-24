@@ -1,19 +1,19 @@
+%include "../common.inc"
 
 SECTION .text
 GLOBAL start
 start:
-    PUSH    R8
-    PUSH    R9
-    MOV     R8, [REL MSG]
-    MOV     R9, MSG_LEN
-    CALL    SYSTEM_PRINT
-    RET
+    SYSPRINT    MSG, MSG_LEN
+    SYSPRINT    MSG2, MSG2_LEN
+    CALL        SYSTEM_EXIT
 
-%include "../print.asm"
+%include "../common.asm"
 
 SECTION .data
 
-MSG:        DB  "SegmenBASEDtion fault!!!", NEWLINE, NULL
+MSG:        DB  "SegmenBASEDtion fault!!!", 0xA, 0x0
 MSG_LEN:    EQU $-MSG 
 
-%include "../common.inc"
+MSG2:        DB  "SegmenBASEDtion fault 2!!!", 0xA, 0x0
+MSG2_LEN:    EQU $-MSG 
+
