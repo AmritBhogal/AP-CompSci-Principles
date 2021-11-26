@@ -11,6 +11,8 @@ start:
 
 SECTION .data
 
+
+
 MSG:        DB  "SegmenBASEDtion fault!!!", 0xA, 0x0
 MSG_LEN:    EQU $-MSG 
 

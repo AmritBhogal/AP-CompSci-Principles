@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /Users/Frityet/Documents/ComSciPrinciples/turtle_lab
-BuildDirectory: /Users/Frityet/Documents/ComSciPrinciples/turtle_lab/build
+SourceDirectory: /Users/Frityet/Documents/AP-CompSci-Principles/Unit 2/turtle_lab
+BuildDirectory: /Users/Frityet/Documents/AP-CompSci-Principles/Unit 2/turtle_lab/build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -14,7 +14,7 @@ CostDataFile:
 Site: Amrits-MacBook-Pro.local
 
 # Build name is osname-revision-compiler, i.e. Linux-2.4.2-2smp-c++
-BuildName: Darwin-c++
+BuildName: Darwin-x86_64-apple-darwin19-g++-11
 
 # Subprojects
 LabelsForSubprojects: 
@@ -26,8 +26,8 @@ SubmitURL: http://
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/local/Cellar/cmake/3.20.5/bin/cmake" "/Users/Frityet/Documents/ComSciPrinciples/turtle_lab"
-MakeCommand: /usr/local/Cellar/cmake/3.20.5/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
+ConfigureCommand: "/usr/local/Cellar/cmake/3.22.0/bin/cmake" "/Users/Frityet/Documents/AP-CompSci-Principles/Unit 2/turtle_lab"
+MakeCommand: /usr/local/Cellar/cmake/3.22.0/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 
 # version control
@@ -62,8 +62,8 @@ UpdateOptions:
 UpdateType: 
 
 # Compiler info
-Compiler: /Library/Developer/CommandLineTools/usr/bin/c++
-CompilerVersion: 12.0.0.12000032
+Compiler: /usr/local/bin/x86_64-apple-darwin19-g++-11
+CompilerVersion: 11.2.0
 
 # Dynamic analysis (MemCheck)
 PurifyCommand: 

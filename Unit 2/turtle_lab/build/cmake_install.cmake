@@ -1,4 +1,4 @@
-# Install script for directory: /Users/Frityet/Documents/ComSciPrinciples/turtle_lab
+# Install script for directory: /Users/Frityet/Documents/AP-CompSci-Principles/Unit 2/turtle_lab
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/Frityet/Documents/ComSciPrinciples/turtle_lab/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/Frityet/Documents/AP-CompSci-Principles/Unit 2/turtle_lab/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

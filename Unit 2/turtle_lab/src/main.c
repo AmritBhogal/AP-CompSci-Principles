@@ -1,8 +1,13 @@
+#include <math.h>
 #include <stdio.h>
 #include <SDL2/SDL.h>
 #include <stdbool.h>
+#include <stdlib.h>
 
+#include "SDL2/SDL_events.h"
+#include "SDL2/SDL_mouse.h"
 #include "SDL2/SDL_render.h"
+#include "SDL2/SDL_timer.h"
 #include "common.h"
 #include "turtle.h"
 
@@ -19,52 +24,32 @@ void init(void)
 
 int main(int argc, char *argv[])
 {
-    struct turtle turtle = create_turtle(window, renderer);
+    struct turtle *turtle = create_turtle(window, renderer);
 
-    SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
     SDL_RenderClear(renderer);
+    turtle_forward(turtle, 100);
 
     bool exit;
     while (!exit) {
         ON_EVENT(SDL_QUIT) {
-            SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_INFORMATION, "Goodbye!", "Cya later!", window);
+            SDL_ShowSimpleMessageBox(SDL_MESSAGEBOX_INFORMATION, "Goodbyeee!", "Cya later!", window);
+
             exit = true;
             break;
         }
-        
-        /* A */
-        turtle_forward(&turtle, 64);
-        turtle_right(&turtle, 32);
-        turtle_backwards(&turtle, 64);
 
-        turtle_forward(&turtle, 48);
-        turtle_left(&turtle, 32);
-        turtle_right(&turtle, 32);
+        ON_EVENT(SDL_MOUSEBUTTONDOWN) {
 
-        turtle_backwards(&turtle, 48);
+            point_t mouse_pos;
 
-        /* SEPERATOR */ 
-        turtle.draw_colour = COLOUR_WHITE;
-        turtle_right(&turtle, 32);
-        turtle.draw_colour = COLOUR_BLACK;
+            SDL_GetMouseState(&mouse_pos.x, &mouse_pos.y);
 
-        /* B */
-        
-        turtle_forward(&turtle, 64);
-
-        turtle_right(&turtle, 32);
-        turtle_backwards(&turtle, 32);
-        turtle_left(&turtle, 32);
-
-        turtle_backwards(&turtle, 8);
-
-        turtle_right(&turtle, 32);
-        turtle_backwards(&turtle, 24);
-        turtle_left(&turtle, 32);
-
-        SDL_RenderPresent(renderer);
-        printf("Done!\n");
+            turtle_forward(turtle, ceil(mouse_pos.x / 10));
+            
+        }
     }
+
+    free(turtle);
 }
 
 ATTRIBUTE(destructor)
